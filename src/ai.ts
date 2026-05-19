@@ -3,7 +3,7 @@ export async function getRecipeFromChefClaude(
 ): Promise<string> {
   const ingredientsString = ingredientsArr.join(", ")
 
-  const response = await fetch("/.netlify/functions/chef-claude", {
+  const response = await fetch("/.netlifyy/chef-claude", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
