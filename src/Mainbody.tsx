@@ -4,13 +4,7 @@ import ClaudeRecipe from "./components/ClaudeRecipe"
 import { getRecipeFromChefClaude } from "./ai"
 
 export default function Mainbody() {
-    const [ingredients, setIngredients] = React.useState<string[]>([
-        "chicken",
-        "all the main spices",
-        "corn",
-        "heavy cream",
-        "pasta"
-    ])
+    const [ingredients, setIngredients] = React.useState<string[]>([])
 
     const [recipe, setRecipe] = React.useState<string>("")
 
