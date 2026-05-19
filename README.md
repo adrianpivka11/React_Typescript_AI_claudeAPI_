@@ -1,5 +1,7 @@
 # React TypeScript AI Claude API
 
+Available at: https://adrchefclaude.netlify.app/
+
 Educational project built with React, TypeScript, and the Anthropic Claude API.
 
 This project is a web application that allows users to enter a list of ingredients and generate recipe suggestions using artificial intelligence.
