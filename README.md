@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# React TypeScript AI Claude API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Educational project built with React, TypeScript, and the Anthropic Claude API.
 
-Currently, two official plugins are available:
+This project is a web application that allows users to enter a list of ingredients and generate recipe suggestions using artificial intelligence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application sends requests to the Claude AI model through the Anthropic API and displays the generated recipe in a user-friendly interface.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+The main goal of this project was to practice modern frontend development and learn how to integrate a React application with an external AI API.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The project combines TypeScript for static typing, React for component-based UI development, and AI-generated content using the Claude model.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Add ingredients through a form
+- Store data using React state
+- Generate recipes with Claude AI
+- Display AI-generated responses in Markdown format
+- Responsive and interactive user interface
+- Secure API key handling with environment variables
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technologies
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- HTML
+- CSS
+- Anthropic Claude API
+- Fetch API
+- React Markdown
+
+---
+
+## Learning Goals
+
+This project was created to improve skills in:
+
+- React component architecture
+- TypeScript type annotations
+- State management with `useState`
+- Props and component communication
+- Working with forms
+- API integration
+- Environment variables
+- Rendering Markdown content
+
+---
