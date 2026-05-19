@@ -29,6 +29,8 @@ export default function Mainbody() {
 
     return (
         <main>
+            <h1>Tell me what ingredients you have</h1>
+            <p>Write your ingredients and I will prepare a recipe for you.</p>
             <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
